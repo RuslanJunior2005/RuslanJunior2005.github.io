@@ -12,5 +12,6 @@ body {
 ::-webkit-scrollbar-thumb{
   background:#000000;
 }
-
-
+.container{
+ text-align: center;
+ }
