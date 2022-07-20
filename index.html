@@ -1,24 +1,47 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
-  <head>
-
-   <link rel="stylesheet"
-
-   href="style.css" />
-
-   <title> il mio sito  è il più bello del modno yess  </title>
-
-  </head>
-
-  <div>
-
-    <div class="wrapper">
-
-<div class="heart"></div>
-
- </html>
-
-
-
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/style/reset.css">
+  <link rel="stylesheet" href="/style/font.css">
+  <link rel="stylesheet" href="/style/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+  <div class="main-wrap">
+    <div class="content-wrap">
+      <img class="content-image" src="/img/main-duck.jpg" alt="Duck">
+      <h1 class="content-title">Soma San</h1>
+      <ul class="content-links">
+        <li class="content-link">
+          <a
+            href="https://youtube.com/channel/UC5z2H6fsaYyjvPjRuqsfnKA"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+        </li>
+        <li class="content-link">
+          <a
+            href="https://github.com/SomaSan2005"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div id="particles-js"></div>
+  </div>
+  <script src="/script/particles.min.js"></script>
+  <script>
+    particlesJS.load('particles-js', '/assets/particles-config.json', function() {
+      console.log('Particles.js config loaded.');
+    });
+  </script>
+</body>
+</html>
