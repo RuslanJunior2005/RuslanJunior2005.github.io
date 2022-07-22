@@ -29,10 +29,35 @@ body {
 }
 
 .main-wrap .content-wrap .content-image {
-    width: 24rem;
-    height: 24rem;
-    border: 0.8rem solid rgba(255, 255, 255, 0.5);
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
     border-radius: 50%;
+}
+
+.content-image::before {
+    content: "";
+    position: absolute;
+    inset: -80px;
+    background: conic-gradient(#f3d0a7 30deg, transparent 120deg);
+    animation: rotate 2s linear infinite;
+}
+
+.content-image::after {
+    content: "";
+    position: absolute;
+    inset: 6px;
+    background-image: url("../img/Oca.png");
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+
+@keyframes rotate {
+    to {
+        transform: rotate(-360deg);
+    }
 }
 
 .main-wrap .content-wrap .content-title {
