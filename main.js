@@ -23,7 +23,9 @@ generate.addEventListener('click', () => {
 });
 
 
-clipboard.addEventListener('click', () => {
-    navigator.clipboard.writeText(password_ele.innerText);
-    alert("Password copied to clipboard");
-});
+function copyToClipBoard() {
+    var content = document.getElementById('textArea');
+    content.select();
+    document.execCommand('copy');
+    alert("Copied!");
+}
