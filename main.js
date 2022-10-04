@@ -4,8 +4,6 @@ const special_chars = "@#$%^&*";
 const generate = document.getElementById("generate");
 const clipboard = document.getElementById("clipboard");
 var pwd_length = document.getElementById("slider");
-
-
 generate.addEventListener('click', () => {
     let password = "";
     var checked = document.getElementById("checkbox").checked;
